@@ -2,13 +2,19 @@
 
 *{box-sizing: border-box;}
 
+body {
+    background-image: url("https://i.pinimg.com/originals/12/a5/e1/12a5e12cc5e95221055ebcac73d8b8d7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 /* ---------------------------------------------header----------------------------------------- */
-header div {background-image: url("./img/6aeb7d694134a550973532fca367ba1a.jpg");
+header div {background-image: url("https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHRlY2h8ZW58MHx8MHx8&w=1000&q=80");
 
 background-size:cover;
-background-position: 40%;
-background-repeat: repeat-x;
+background-position: 90%;
+background-repeat: no-repeat;
 height: 450px;
 width: 100%;
 }
@@ -16,72 +22,59 @@ width: 100%;
 #nav {
     width: 500px;
     position: relative;
-    left: 70%;
+    left: 70%; 
 }
 
-nav ul a:hover {color: white;   }
+nav ul a {
+    color: #D82148;
+}
+
+nav ul a:hover {color: white; }
     
-
-
-  
-
 
 
 
 #img1 {width: 250px;
 height: 250px;
 border-radius: 50%;
-border: 10px solid white;
+border: 10px solid #D82148;
 position: relative;
-top: 10px;
+top: 80px;
 left: 40%;
 }
+
+
 
 header h1 {
     font-size:x-large;
     color: white;
     position: relative;
-    top: 20px;
-    left: 40%;
+    top: 90px;
+    left: 38%;
     font-size:xx-large;
     width:310px;
-  
-}
-
-/* --------------------------------------------main--------------------------------------- */
-
-.container {
-    
-    background-color: #e5e5e5;
-   
-    
 }
 
 /*----------------------------------------- objective--------------------------------------------- */
 
-#objective {
-    background-color: #bdbebe;
-    border: 3px solid black;
-    width: 80%;
-    height: 100px;
-    margin-left: 100px;
-    margin-bottom: 60px;
-    font-size: large;
-    padding-left: 50px;
-    padding-top: 20px;
+.jumbotron {
+    margin-top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
    
 }
-
 /*--------------------------------------------- EDUCATION -------------------------------------*/
 
-.h1 { background-color: #bdbebe;
+.h1 {
     position: relative;
     width: 300px;
     text-align: center;
     margin-left: 36%;
-    border: 3px solid black;
 
+}
 
+#Edu {
+    margin-top: 100px;
 }
 
 .h1::before {
@@ -90,7 +83,7 @@ header h1 {
     display: block;
     width: 90%;
     height: 3px;
-    background-color: black;
+    background-color:#151D3B;
     left: 110%;
     top: 50%;
 }
@@ -102,7 +95,7 @@ header h1 {
     display: block;
     width: 100%;
     height: 3px;
-    background: #000;
+    background:#151D3B;
     right:110%;
     top: 50%;
     
@@ -113,23 +106,21 @@ header h1 {
 
 
 .parent {
-    display: flex;
+ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 padding: 6%;
-
 }
 
 
 .box {
-background-color: #bdbebe;
-border: 3px solid black;
+background-color: #D82148;
 width: 200px;
 height: 250px;
 margin: 20px;
 transition: 1s;
-
-
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-radius: 15px;
 }
 
 .box:hover {
@@ -142,8 +133,7 @@ transition: 1s;
     text-align: center;
     padding-top: 10px;
     font-weight:600;
-
-
+    color: white;
 }
 
 
@@ -151,8 +141,7 @@ transition: 1s;
     font-size:medium;
     font-weight: 300;
     padding: 20px;
-
-
+    color: white;
 }
 
 
@@ -163,124 +152,97 @@ transition: 1s;
  
  }
 
-
-
-
-.parent2 {
-width:90% ;
-height: 100%;
-display: grid;
-grid-row: repeat (3,300px);
-grid-column: repeat (3,300px);
-padding: 8%;
-column-gap: 50px;
-margin-top: 20px;
-margin-bottom: -20px;
-
+.card1 {
+    margin-top: 100px;
+    margin-bottom: 50px; 
 }
 
-.hover {position: relative;}
 
-.img {
-    width: 250px;
-    height: 200px;
-    border: 3px solid black;
-    position: relative;
-    opacity: 1;
-}
 
-.button {
-    position: absolute;
-    opacity: 0;
-    top: 140px;
-    left: 150px;
-    width: 110px;
+.card2 {
    
+    margin-bottom: 100px;
+
+}
+
+.shadow1{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    
     
 }
 
-.text
-{
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    height: 35px;
-    padding-left: 15px;
-    padding-top: 3px;
+.shadow1:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+   
+  }
 
+
+  .shadow2{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 
+.shadow2:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+  }
 
 
-.hover:hover .img {
-    opacity: 0.3;
+  .shadow3{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 
+.shadow3:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+  }
 
-.hover:hover .button {
-    opacity: 1;
+
+  .shadow4{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 
+.shadow4:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+  }
 
 
 
-
-
-.parent2 div:nth-child(1) {
-    grid-area: 1/1;
+  .shadow5{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 
-.parent2 div:nth-child(2) {
-    grid-area: 1/2;
+.shadow5:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+  }
+
+
+
+
+  .shadow6{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 
-.parent2 div:nth-child(3) {
-    grid-area: 1/3;
-}
-
-.parent2 div:nth-child(4) {
-    grid-area: 2/1;
-}
-
-.parent2 div:nth-child(5) {
-    grid-area: 2/2;
-}
-
-.parent2 div:nth-child(6) {
-    grid-area: 2/3;
-} 
+.shadow6:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+  }
 
 
-
-.parent2 div h5 {
-    background-color: #bdbebe;
-    border: 3px solid black;
-    margin-top: 20px;
-    font-size: large;
-    height: 100px;
-    padding-top: 5px;
-    padding-left: 10px;
-    text-align: center;
-}
-
-ul {
-    list-style: none; 
-}
-
-li { 
-    display: inline-block;
-}
-
-li a{
-    color: rgb(243, 140, 140);
-
-}
+  .parent2 {
+      margin-top: -50px;
+      margin-bottom: -50px;
+      padding: 5%;
+     
+  }
 
 /*--------------------------------------------------- Experience----------------------------- */
 
 #text {
     background-color: #bdbebe;
-    border: 3px solid black;
+    
     width: 80%;
     height: 100px;
     margin-left: 100px;
@@ -294,7 +256,8 @@ li a{
 /* ---------------------------------------------footer--------------------------------------  */
 
 .footer {
-    background-color: #bdbebe;
+    background-color:#151D3B;
+    color: white;
     
     display: flex;
     flex-direction: row;
@@ -325,8 +288,10 @@ li a{
 }
 
 .footer div p a {
-    color: #000;
+    color: white;
 }
+
+
 /*-------------------------------------------------- media 992px-------------------------------------------- */
 
 
@@ -354,7 +319,40 @@ li a{
         .padding {
             margin-left: 32%;
         }
+
+        .parent2 {
+            margin-top: -50px;
+            margin-bottom: -50px;
+            padding: 5%;
+            grid-template-rows: repeat(3,200px);
+            grid-template-columns: repeat(2,200px);
            
+        }
+
+
+        .class1 {
+            grid-area:1/1 ;
+        }
+
+        .class2 {
+            grid-area: 1/2;
+        }
+          
+        .class3 {
+          grid-area: 2/1;
+        }
+
+        .class4 {
+            grid-area: 2/2;
+        }
+
+        .class5 {
+            grid-area: 3/1;
+        }
+
+        .class6 {
+            grid-area: 3/2;
+        }
 
         .padding::before {
             width: 70%;
@@ -368,36 +366,7 @@ li a{
           }
        
        
-    .parent2 {
-            padding: 18%;
-            grid-row: repeat (6,300px);
-            grid-column: repeat (2,300px);
-          
-            }
-
-         .parent2 div:nth-child(1) {
-                grid-area: 1/1;
-            }
-            
-         .parent2 div:nth-child(2) {
-                grid-area: 1/2;
-            }
-            
-        .parent2 div:nth-child(3) {
-                grid-area: 2/1;
-            }
-            
-        .parent2 div:nth-child(4) {
-                grid-area: 2/2;
-            }
-            
-         .parent2 div:nth-child(5) {
-                grid-area:3/1;
-            }
-            
-         .parent2 div:nth-child(6) {
-                grid-area: 3/2;
-            } 
+   
 
      .footer {
          justify-content: left;
@@ -459,36 +428,22 @@ li a{
         right:110%;
       }
 
-    .parent2 {
-        padding: 5%;
-        grid-row: repeat (6,300px);
-        grid-column: repeat (2,300px);
-      
-        }
+   .card1 {
+       font-size:x-small;
+   }
 
-     .parent2 div:nth-child(1) {
-            grid-area: 1/1;
-        }
-        
-     .parent2 div:nth-child(2) {
-            grid-area: 1/2;
-        }
-        
-    .parent2 div:nth-child(3) {
-            grid-area: 2/1;
-        }
-        
-    .parent2 div:nth-child(4) {
-            grid-area: 2/2;
-        }
-        
-     .parent2 div:nth-child(5) {
-            grid-area:3/1;
-        }
-        
-     .parent2 div:nth-child(6) {
-            grid-area: 3/2;
-        }
+   .card2 {
+    font-size:x-small;
+}
+
+.hd1 {
+    font-size: small;
+}
+
+.card {
+    width: 210px;
+    margin-left: -20px;
+}  
         
         
         #text {
@@ -563,37 +518,31 @@ li a{
     padding: 25%;
     }
 
-    .parent2 {
-        grid-row: repeat (6,300px);
-        grid-column: repeat (1,300px);
-        padding: 22%;
-        margin-top: -20px;
-        }
+    .card1 {
+        margin-right: 100px;
+        font-size:xx-small;
+        width: 120%;
 
 
-        .parent2 div:nth-child(1) {
-            grid-area: 1/1;
-        }
-        
-        .parent2 div:nth-child(2) {
-            grid-area: 2/1;
-        }
-        
-        .parent2 div:nth-child(3) {
-            grid-area: 3/1;
-        }
-        
-        .parent2 div:nth-child(4) {
-            grid-area: 4/1;
-        }
-        
-        .parent2 div:nth-child(5) {
-            grid-area: 5/1;
-        }
-        
-        .parent2 div:nth-child(6) {
-            grid-area: 6/1;
-        } 
+    }
+ 
+    .card2 {
+     font-size:x-small;
+     margin-right: 100px;
+     font-size:xx-small;
+     width: 120%;
+ }
+ 
+ .hd1 {
+     font-size: small;
+ }
+ 
+ .card {
+     width: 210px;
+     
+
+     
+ }  
 
         #text {
         
@@ -616,12 +565,31 @@ li a{
 /*---------------------------------------------- Media 576px----------------------------------- */
 @media (min-width:480px) and (max-width: 576px) {
 
+
+    #nav {
+        width: 100px;
+        position: relative;
+        left: 70%;
+        height: 40px; 
+    }
+    
+    nav ul a {
+        color: #D82148;
+        height: 30px;
+        width: 50px;
+        margin-left: 25px;
+        font-size: x-small;
+      
+        padding-bottom: -20px;
+      
+    }
+
     #img1 {
-        left: 30%;
-        }
+        left: 25%;
+        } 
 
     header h1 {
-       left: 30%;
+       left: 20%;
         }    
  
         #objective {
@@ -651,41 +619,41 @@ li a{
         
         padding: 25%;
         }
+     
+        
+    .card1 {
+        margin-right: 100px;
+        font-size:xx-small;
+        width: 120%;
 
+
+    }
+ 
+    .card2 {
+     font-size:x-small;
+     margin-right: 100%;
+     font-size:xx-small;
+     width: 120%;
+ }
+ 
+ .hd1 {
+     font-size: small;
+ }
+ 
+ .card {
+     width: 210px;
+     
+
+     
+ }  
+
+        .padding::before {
+            width: 70%;
+            left: 110%;
+        }
 
         
     
-        .parent2 {
-            grid-row: repeat (6,300px);
-            grid-column: repeat (1,300px);
-            padding: 22%;
-            margin-top: -20px;
-            }
-    
-    
-            .parent2 div:nth-child(1) {
-                grid-area: 1/1;
-            }
-            
-            .parent2 div:nth-child(2) {
-                grid-area: 2/1;
-            }
-            
-            .parent2 div:nth-child(3) {
-                grid-area: 3/1;
-            }
-            
-            .parent2 div:nth-child(4) {
-                grid-area: 4/1;
-            }
-            
-            .parent2 div:nth-child(5) {
-                grid-area: 5/1;
-            }
-            
-            .parent2 div:nth-child(6) {
-                grid-area: 6/1;
-            } 
     
             #text {
             
@@ -708,11 +676,27 @@ li a{
  /*---------------------------------------------- Media 400px----------------------------------- */ 
         
         @media (min-width:400px) and (max-width: 479px) {
-            #img1 {width:150px;
-                height: 150px;
-                border: 5px solid white;
+            #img1 {width:200px;
+                height: 200px;
+                border: 5px solid #D82148;
                 top: 20%;
-                left: 35%;
+                left: 30%;
+                }
+
+                #nav {
+                    width: 100px;
+                    position: relative;
+                    left: 70%;
+                    height: 20px; 
+                }
+                
+                nav ul a {
+                    color: #D82148;
+                    height: 15px;
+                    width: 50px;
+                    margin-left: 10px;
+                    font-size:60%;
+                    padding-bottom: -20px;
                 }
         
         
@@ -751,41 +735,32 @@ li a{
                 }
 
                     
-                    .parent2 {
-                        grid-row: repeat (6,150px);
-                        grid-column: repeat (1,150px);
-                        
-                        margin-top: 20px;
-                        width:100% ;
-                        margin-bottom: 15%;
-        }  
-         
-         
-        
-        .parent2 div:nth-child(1) {
-            grid-area: 1/1;
-        }
-        
-        .parent2 div:nth-child(2) {
-            grid-area: 2/1;
-        }
-        
-        .parent2 div:nth-child(3) {
-            grid-area: 3/1;
-        }
-        
-        .parent2 div:nth-child(4) {
-            grid-area: 4/1;
-        }
-        
-        .parent2 div:nth-child(5) {
-            grid-area: 5/1;
-        }
-        
-        .parent2 div:nth-child(6) {
-            grid-area: 6/1;
-        }   
+                 
+                .card1 {
+                    margin-right: 100px;
+                    font-size:50%;
+                    width: 120%;
             
+            
+                }
+             
+                .card2 {
+                 margin-right: 100%;
+                 font-size:xx-small;
+                 width: 120%;
+             }
+             
+             .hd1 {
+                 font-size: small;
+             }
+             
+             .card {
+                 width: 210px;
+                 
+            
+                 
+             }  
+
             .img {
               
                 width: 200px;
@@ -819,20 +794,42 @@ li a{
          
  /*---------------------------------------------- Media 340px----------------------------------- */  
  @media (min-width:340px) and (max-width: 399px) {
-    #img1 {width:150px;
-        height: 150px;
-        border: 5px solid white;
-        top: 10%;
-        left: 30%;
+   
+    #img1 {width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 5px solid #D82148;
+        position: relative;
+        top: 100px;
+        left: 20%;
         }
-
 
         header h1 {
             font-size:larger;
-            top: 20%;
-            left: 30%;
+            top: 30%;
+            left: 20%;
             width:200px;
         }
+        
+
+    #nav {
+        width: 100px;
+        position: relative;
+        left: 70%;
+        height: 20px; 
+    }
+    
+    nav ul a {
+        color: #D82148;
+    
+        width: 50px;
+        margin-left:-2px;
+        font-size:60%;
+        padding-bottom: -20px;
+    }
+ 
+
+      
 
         #objective {
             width: 90%;
@@ -862,42 +859,29 @@ li a{
         }
     
         
-            
-            .parent2 {
-                grid-row: repeat (6,150px);
-                grid-column: repeat (1,150px);
-                
-                margin-top: 20px;
-                width:100% ;
-                margin-bottom: 15%;
-}  
- 
- 
-
-.parent2 div:nth-child(1) {
-    grid-area: 1/1;
-}
-
-.parent2 div:nth-child(2) {
-    grid-area: 2/1;
-}
-
-.parent2 div:nth-child(3) {
-    grid-area: 3/1;
-}
-
-.parent2 div:nth-child(4) {
-    grid-area: 4/1;
-}
-
-.parent2 div:nth-child(5) {
-    grid-area: 5/1;
-}
-
-.parent2 div:nth-child(6) {
-    grid-area: 6/1;
-}   
+        .card1 {
+            margin-right: 100px;
+            font-size:50%;
+            width: 120%;
     
+    
+        }
+     
+        .card2 {
+         margin-right: 100%;
+         font-size:xx-small;
+         width: 120%;
+     }
+     
+     .hd1 {
+         font-size: small;
+     }
+     
+     .card {
+         width: 210px;}
+         
+               
+           
     .img {
       
         width: 200px;
@@ -927,17 +911,37 @@ li a{
 /*---------------------------------------------- Media 280px----------------------------------- */
  
 @media (min-width:280px) and (max-width: 339px) {
-    #img1 {width:150px;
+
+    #nav {
+        width: 100px;
+        position: relative;
+        left: 70%;
+        height: 20px; 
+    }
+    
+    nav ul a {
+        color: #D82148;
+    
+        width: 50px;
+        margin-left:-15px;
+        font-size:40%;
+        padding-bottom: -20px;
+    }
+ 
+    #img1 {width: 150px;
         height: 150px;
-        border: 5px solid white;
-        top: 10%;
-        left: 25%;
+        border-radius: 50%;
+        border: 5px solid #D82148;
+        position: relative;
+        top: 200px;
+        left: 20%;
         }
+        
 
 
         header h1 {
             font-size:larger;
-            top: 20%;
+            top: 50%;
             left: 15%;
             width: 200px;
             
@@ -967,41 +971,28 @@ li a{
           }
 
           
-            
-            .parent2 {
-                grid-row: repeat (6,150px);
-                grid-column: repeat (1,150px);
-                padding-left: 5px;
-                margin-top: 20px;
-                width:100% ;
-                margin-bottom: 15%;
-}  
- 
- 
-
-.parent2 div:nth-child(1) {
-    grid-area: 1/1;
-}
-
-.parent2 div:nth-child(2) {
-    grid-area: 2/1;
-}
-
-.parent2 div:nth-child(3) {
-    grid-area: 3/1;
-}
-
-.parent2 div:nth-child(4) {
-    grid-area: 4/1;
-}
-
-.parent2 div:nth-child(5) {
-    grid-area: 5/1;
-}
-
-.parent2 div:nth-child(6) {
-    grid-area: 6/1;
-}   
+           
+        .card1 {
+            margin-right: 100px;
+            font-size:50%;
+            width: 120%;
+    
+    
+        }
+     
+        .card2 {
+         margin-right: 100%;
+         font-size:xx-small;
+         width: 120%;
+     }
+     
+     .hd1 {
+         font-size: small;
+     }
+     
+     .card {
+         width: 210px;}
+         
     
     .img {
       
